@@ -1,40 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Software Tests List
 
-MACD
-- mod(weights) must sum to 1 at each timestamp
-- we must have observations for the last business day
-- on each day, we must have signals for all the assets we have prices for
-
-Timeseries Carry
-- mod(weights) must sum to 1 at each timestamp
-- we must have observations for the last business day
-- on each day, we must have signals for all the assets we have prices for
-
-
-LongShort Carry
-- mod(weights) must sum to 2 at each timestamp
-- weights must sum to 0 at each timestamp
-- we must have the appropriate number of positions, depending on the ranking value
-
-Databases
-- Generics must have OHLCS datapoints at each timestamp
-- Returns must have observations for all 4 points at each timestamp
-- All the active contracts must have all their data since the first day they came onto the front 4
-- Features tables must have observations for each day
-
-
-Strategies / Portfolio Construction
-- We want to make sure that we are not over concentrated in any particular commodity.
-    this can be done by setting limits on the value of positions by commodity as a 
-    function of the portfolio value
-    
-    Also that we are not overweighted in heavily correlated assets. E.g. if we
-    set a positon limit by asset to 10% of the portfolio, and we for some reason
-    only hold CO and CL, we want to make sure that sum of both positions is no greater 
-    than x, since both assets are very highly correlated. This is where something
-    like markowitz mean-vairance optimisation comes in
     
 
 """
